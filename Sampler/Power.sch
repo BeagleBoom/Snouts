@@ -1,0 +1,277 @@
+EESchema Schematic File Version 2
+LIBS:valves
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:switches
+LIBS:Sampler-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 42 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_02X05 J7
+U 1 1 5984F46B
+P 2900 2400
+F 0 "J7" H 2900 2700 50  0000 C CNN
+F 1 "PWR" H 2900 2100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 2900 1200 50  0001 C CNN
+F 3 "" H 2900 1200 50  0001 C CNN
+	1    2900 2400
+	1    0    0    1   
+$EndComp
+$Comp
+L GND #PWR032
+U 1 1 5984F4DE
+P 3400 2400
+F 0 "#PWR032" H 3400 2150 50  0001 C CNN
+F 1 "GND" H 3400 2250 50  0000 C CNN
+F 2 "" H 3400 2400 50  0001 C CNN
+F 3 "" H 3400 2400 50  0001 C CNN
+	1    3400 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 2400 3400 2400
+Wire Wire Line
+	3150 2300 3300 2300
+Wire Wire Line
+	3300 2300 3300 2700
+Connection ~ 3300 2400
+Wire Wire Line
+	3300 2500 3150 2500
+$Comp
+L GND #PWR033
+U 1 1 5984F529
+P 2400 2400
+F 0 "#PWR033" H 2400 2150 50  0001 C CNN
+F 1 "GND" H 2400 2250 50  0000 C CNN
+F 2 "" H 2400 2400 50  0001 C CNN
+F 3 "" H 2400 2400 50  0001 C CNN
+	1    2400 2400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2400 2400 2650 2400
+Wire Wire Line
+	2650 2300 2500 2300
+Wire Wire Line
+	2500 2300 2500 2500
+Connection ~ 2500 2400
+Wire Wire Line
+	2500 2500 2650 2500
+NoConn ~ 3150 2600
+NoConn ~ 2650 2600
+$Comp
+L Ferrite_Bead_Small L1
+U 1 1 5984F700
+P 4000 2200
+F 0 "L1" H 4075 2250 50  0000 L CNN
+F 1 "600R" H 4075 2150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" V 3930 2200 50  0001 C CNN
+F 3 "" H 4000 2200 50  0001 C CNN
+	1    4000 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 2200 2500 2200
+Wire Wire Line
+	2500 2200 2500 2000
+Wire Wire Line
+	2500 2000 3300 2000
+Wire Wire Line
+	3300 2000 3300 2200
+Wire Wire Line
+	3150 2200 3900 2200
+Connection ~ 3300 2200
+$Comp
+L D_Schottky D5
+U 1 1 5984F790
+P 4450 2200
+F 0 "D5" H 4450 2300 50  0000 C CNN
+F 1 "D_Schottky" H 4450 2100 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-323_HandSoldering" H 4450 2200 50  0001 C CNN
+F 3 "" H 4450 2200 50  0001 C CNN
+	1    4450 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 2200 4300 2200
+$Comp
+L +12V #PWR034
+U 1 1 5984F7C9
+P 5000 2100
+F 0 "#PWR034" H 5000 1950 50  0001 C CNN
+F 1 "+12V" H 5000 2240 50  0000 C CNN
+F 2 "" H 5000 2100 50  0001 C CNN
+F 3 "" H 5000 2100 50  0001 C CNN
+	1    5000 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2200 6300 2200
+Wire Wire Line
+	5000 2200 5000 2100
+$Comp
+L C C30
+U 1 1 5984F9D7
+P 5300 2400
+F 0 "C30" H 5325 2500 50  0000 L CNN
+F 1 "100nF" H 5325 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5338 2250 50  0001 C CNN
+F 3 "" H 5300 2400 50  0001 C CNN
+	1    5300 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2200 5300 2250
+Connection ~ 5000 2200
+$Comp
+L CP C31
+U 1 1 5984FA3B
+P 5750 2400
+F 0 "C31" H 5775 2500 50  0000 L CNN
+F 1 "47uF" H 5775 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_8x5.4" H 5788 2250 50  0001 C CNN
+F 3 "" H 5750 2400 50  0001 C CNN
+	1    5750 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2200 5750 2250
+Connection ~ 5300 2200
+Wire Wire Line
+	3300 2700 7900 2700
+Wire Wire Line
+	5750 2700 5750 2550
+Connection ~ 3300 2500
+Wire Wire Line
+	5300 2550 5300 2700
+Connection ~ 5300 2700
+$Comp
+L AP1117 U3
+U 1 1 5984FCD5
+P 6600 2200
+F 0 "U3" H 6700 1950 50  0000 C CNN
+F 1 "AP1117" H 6600 2450 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 6600 1850 50  0001 C CNN
+F 3 "" H 6700 1950 50  0001 C CNN
+	1    6600 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 2200
+Wire Wire Line
+	6600 2700 6600 2500
+Connection ~ 5750 2700
+$Comp
+L C C32
+U 1 1 5984FD9D
+P 7500 2400
+F 0 "C32" H 7525 2500 50  0000 L CNN
+F 1 "100nF" H 7525 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7538 2250 50  0001 C CNN
+F 3 "" H 7500 2400 50  0001 C CNN
+	1    7500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C33
+U 1 1 5984FE24
+P 7900 2400
+F 0 "C33" H 7925 2500 50  0000 L CNN
+F 1 "47uF" H 7925 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_8x5.4" H 7938 2250 50  0001 C CNN
+F 3 "" H 7900 2400 50  0001 C CNN
+	1    7900 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2200 8300 2200
+Wire Wire Line
+	7900 2200 7900 2250
+Wire Wire Line
+	7500 2250 7500 2200
+Connection ~ 7500 2200
+Wire Wire Line
+	7900 2700 7900 2550
+Connection ~ 6600 2700
+Wire Wire Line
+	7500 2550 7500 2700
+Connection ~ 7500 2700
+$Comp
+L Ferrite_Bead_Small L2
+U 1 1 59850367
+P 8400 2200
+F 0 "L2" H 8475 2250 50  0000 L CNN
+F 1 "600R" H 8475 2150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" V 8330 2200 50  0001 C CNN
+F 3 "" H 8400 2200 50  0001 C CNN
+	1    8400 2200
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7900 2200
+$Comp
+L +5V #PWR035
+U 1 1 59850C97
+P 8900 2050
+F 0 "#PWR035" H 8900 1900 50  0001 C CNN
+F 1 "+5V" H 8900 2190 50  0000 C CNN
+F 2 "" H 8900 2050 50  0001 C CNN
+F 3 "" H 8900 2050 50  0001 C CNN
+	1    8900 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 2200 8900 2200
+Wire Wire Line
+	8900 2200 8900 2050
+$Comp
+L PWR_FLAG #FLG036
+U 1 1 5985D13D
+P 5550 2050
+F 0 "#FLG036" H 5550 2125 50  0001 C CNN
+F 1 "PWR_FLAG" H 5550 2200 50  0000 C CNN
+F 2 "" H 5550 2050 50  0001 C CNN
+F 3 "" H 5550 2050 50  0001 C CNN
+	1    5550 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2050 5550 2200
+Connection ~ 5550 2200
+$EndSCHEMATC
